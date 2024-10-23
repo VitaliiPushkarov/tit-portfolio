@@ -1,0 +1,768 @@
+$title-fz: 84px
+$title-lh: 84px
+$subtitle-fz: 22px
+$subtitle-lh: 44px
+
+$main-c: #6d71e4
+$dark-liliac: #969bda
+$light-liliac: #dcdffd
+$black: #0e0e15
+$grey: #a7abd0
+$lil: #b5baf8
+
+
+*
+    box-sizing: border-box
+body
+    color: $black
+    background-color: $lil
+    font-family: Montserrat, sans-serif
+    font-weight: 500
+    font-size: 14px
+    line-height: 18px
+    margin: 0
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary
+    display: block
+h1,h2,h3,h4,h5,h6,p
+    margin: 0
+p
+    color: $black
+    font-weight: 400
+.fw600
+    font-weight: 600
+a
+    text-decoration: none
+    color: $black
+h3
+    font-size: 24px
+    line-height: 30px
+img
+    vertical-align: middle
+    max-width: 100%
+    display: inline-block
+.container
+    max-width: 1366px
+    margin: 0 auto
+    padding-left: 56px
+    padding-right: 56px
+.section
+    margin-top: 0
+    margin-bottom: 0
+    padding-top: 40px
+    padding-bottom: 74px
+    &.hero-sec
+        margin-top: 100px
+    &.section-100vh
+        height: 100vh
+        display: flex
+        justify-content: center
+        align-items: center
+.mt-72
+    margin-top: 72px
+.mb-32
+    margin-bottom: 32px
+.mt-16
+    margin-top: 16px
+/* Padding */
+.padding-top-0
+    padding-top: 0
+.padding-bottom-55
+    padding-bottom: 55px
+.title-wrapper
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 32px
+.title
+    color: $black
+    text-transform: uppercase
+    font-size: $title-fz
+    line-height: $title-lh
+.subtitle
+    color: $main-c
+    font-size: $subtitle-fz
+    font-weight: 600
+    line-height: $subtitle-lh
+    text-transform: uppercase
+.h1
+    font-size: 95px
+    line-height: 110%
+    text-transform: uppercase
+    font-weight: 700
+    letter-spacing: -.05em
+.h6
+    color: $black
+    font-size: 18px
+    line-height: 22px
+    font-weight: 400
+    text-transform: uppercase
+.h4
+    font-size: 24px
+    font-weight: 500
+    line-height: 29px
+.paragraph-big
+    font-size: 24px
+    font-weight: 500
+    text-transform: uppercase
+    color: $black
+    line-height: 160%
+    .main-c
+        color: $main-c
+.text-upper
+    text-transform: uppercase
+.padding-0
+    padding: 0
+/* Colors and Backgrounds */
+.black
+    color: $black
+.light-liliac
+    color: $light-liliac
+.bg-light-liliac
+    background-color: $light-liliac
+.dark-liliac
+    color: $dark-liliac
+.bg-dark-liliac
+    background-color: $dark-liliac
+.main-c
+    color: $main-c
+.bg-main-c
+    background-color: $main-c
+.lil
+    color: $lil
+.lil-bg
+    background-color: $lil
+.cards-bg
+    background-color: #1a1820
+/* Hero */
+.hero-text-wrapper
+    display: flex
+    flex-direction: column
+    gap: 10px
+    .second-row
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        .hero-subtext
+            font-weight: 300
+            line-height: 20px
+    .third-row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .third-row-wrapper
+            display: flex
+            align-items: center
+            gap: 15px
+            flex-wrap: wrap
+            .item
+                display: flex
+                align-items: center
+                padding: 8px 16px
+                border: 1px dashed $black
+                border-radius: 30px
+                white-space: nowrap
+                p
+                    color: $black
+                    text-transform: uppercase
+                &.main-c
+                    background-color: $main-c
+        .hero-link
+            display: flex
+            justify-content: flex-start
+            align-items: stretch
+            flex-flow: row
+            .btn-container
+                background-color: $black
+                border-radius: 100px
+                border: 1px solid $black
+                padding: 14px 32px 12px
+                font-size: 18px
+                color: $lil
+                line-height: 28px
+                display: flex
+                align-items: center
+                justify-content: center
+                font-weight: 300
+                white-space: nowrap
+                text-transform: uppercase
+                transition: background-color .2s ease-in-out, color .2s ease-in-out
+                &:hover
+                    background-color: $light-liliac
+                    color: $black
+                &.arrow
+                    border: 2px dashed $lil
+                    flex: none
+                    margin-top: 0
+                    margin-bottom: 0
+                    margin-left: -12px
+                    padding: 12px
+                    transition: background-color .2s ease-in-out
+                    &:hover
+                        background-color: $light-liliac
+                        svg
+                            fill: $black
+/* Navbar */
+.nav-wrap
+    position: relative
+    z-index: 1000
+    top: 0
+.navbar
+    padding-left: 56px
+    padding-right: 56px
+    bottom: auto
+    left: 0%
+    right: 0%
+    top: 1%
+    border-bottom: 1px solid #fff
+    background-color: $black
+    max-width: 1366px
+    margin-left: auto
+    margin-right: auto
+    border-radius: 15px
+    &.fixed
+        position: fixed
+        z-index: 1000
+.container-m.nav
+    justify-content: center
+    align-items: center
+    height: 68px
+    padding-top: 0
+    padding-bottom: 0
+    margin-right: auto
+    margin-left: auto
+    display: flex
+.navmenu
+    float: right
+    position: relative
+.nav-brand
+    float: left
+    color: $light-liliac
+    text-decoration: none
+    font-weight: 700
+    position: relative
+    &:hover
+        color: $dark-liliac
+.brand-logo
+    justify-content: flex-start
+    align-items: center
+    display: flex
+    font-size: 26px
+    margin-right: auto
+.navlink
+    vertical-align: top
+    color: $light-liliac
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+    padding: 20px
+    text-decoration: none
+    display: inline-block
+    position: relative
+    font-size: 20px
+    font-weight: 400
+    &:hover
+        color: $dark-liliac
+.m-wrap
+    display: flex
+    margin-left: auto
+    a
+        background-color: $dark-liliac
+        border-radius: 15px
+        padding: 10px
+        border: 1px solid $dark-liliac
+        font-size: 20px
+        color: #fff
+        text-decoration: none
+        transition: .2s all ease-in-out
+        &:hover
+            background-color: $light-liliac
+            color: $black
+.burger-menu
+    display: none
+    flex-direction: column
+.burger-menu div 
+  width: 25px
+  height: 3px
+  background-color: $light-liliac
+  margin: 2px 0
+.nav-overlay 
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 999 /* Ensure the overlay is below the navbar but above other content */
+
+/* Grid Templates */
+.grid-3-col
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-template-rows: auto
+    gap: 16px
+    .box-wrapper
+        border-radius: 10px
+        padding: 32px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        gap: 26px
+        overflow: hidden
+        &.lil-bg
+            background-color: $lil
+        &.second
+            background-color: $light-liliac
+        &.last
+            background-color: $black
+        .paragraph-big
+            color: $black
+            font-weight: 300
+            line-height: 110%
+            font-size: 20px
+            &.light-liliac
+                color: $light-liliac
+        .h4
+            text-transform: uppercase
+        .star
+            flex: none
+            margin-top: auto
+            margin-left: auto
+            width: 141px
+            height: 100px
+        &.padding-0
+            padding-bottom: 0
+            padding-right: 0
+.layout-grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-auto-rows: auto auto
+    gap: 16px
+    grid-auto-columns: 1fr
+    .layout-grid-box
+        border-radius: 10px
+        padding: 32px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        position: relative
+        height: 100%
+        &.padding-0
+            padding-bottom: 0
+        .benefits-img
+            flex: none
+            margin-top: auto
+            margin-left: auto
+            &.star
+                width: 212px
+                height: 118px
+.layout-grid-2
+    display: grid
+    grid-template-columns: 1fr 1.5fr .8fr
+    gap: 16px
+    grid-auto-rows: auto auto
+    grid-auto-columns: 1fr
+    margin-top: 16px
+    .layout-grid-box
+        padding: 32px
+        border-radius: 10px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        height: 100%
+.layout-grid-3
+    display: grid
+    grid-template-columns: 1fr 1fr 1.5fr
+    gap: 16px
+    grid-template-rows: auto auto
+    grid-auto-columns: 1fr
+    margin-top: 16px
+    .layout-grid-box
+        padding: 32px
+        border-radius: 10px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-between
+        height: 100%
+        &.first-box
+            grid-area: 1/1/3/2
+            p
+                color: $grey
+        &.second-box, &.third-box
+            grid-area: span 1/span 1/ span 1/ span 1
+        &.img-box
+            grid-area: 1 / 3 / 3 / 4
+            padding: 0
+            .img-full-width
+                border-radius: 10px
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+/* Swiper */
+.swiper-slide
+    height: 560px
+    padding: 20px
+    border-radius: 15px
+    background-color: $light-liliac
+    display: flex
+    flex-direction: column
+    gap: 25px
+    align-items: flex-start
+    .swiper-img
+        height: 300px
+        width: 100%
+        object-fit: cover
+    .swiper-text
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 10px
+.slider-wrapper
+    display: flex
+    align-items: flex-start
+    gap: 10px
+    margin-top: 12px
+    cursor: pointer
+    .swiper-prev,.swiper-next
+        fill: $black
+        &:hover
+            fill: $main-c
+.contacts_wrapper
+    display: grid
+    grid-template-columns: 1fr 1.5fr
+    gap: 10px
+.contacts_form
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 10px
+    label
+        font-size: 20px
+    &-control
+        height: 45px
+        flex: 0 0 auto
+    input,textarea
+        border-radius: 15px
+        width: 100%
+        background-color: $light-liliac
+    input[type="text" i] 
+        padding: 5px
+        font-size: 18px
+    .btn
+        text-transform: uppercase
+        font-weight: 600
+        background-color: $black
+        color: $light-liliac
+        border: 1px solid $dark-liliac
+        cursor: pointer
+        transition: background-color .2s ease-in-out, color .2s ease-in-out
+        &:hover
+            background-color: $light-liliac
+            color: $black
+.checkbox-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 5px
+input[type="checkbox" i]
+    width: 24px
+    height: 24px
+.contacts_map
+    iframe
+        width: 100%
+        height: 100%
+.footer-sec
+    .container
+        padding: 20px 56px
+        background-color: $black
+        border-radius: 15px
+.footer-wrapper
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    .wrapper
+        display: flex
+        flex-direction: column
+        gap: 25px
+    .h3
+        font-size: 24px
+        color: $light-liliac
+        font-weight: 500
+    h3, .paragraph
+        color: $light-liliac
+    .contacts-wrapper,.points-wrapper
+        display: flex
+        flex-direction: column
+        gap: 10px
+        align-items: flex-start
+    .paragraph
+        font-size: 18px
+        &:hover
+            color: $dark-liliac
+.cookie-banner 
+  position: fixed
+  bottom: 0
+  color: #fff
+  text-align: center
+  z-index: 1000
+  right: 0
+
+
+.cookie-button 
+    border: 1px solid $dark-liliac
+    background-color: $dark-liliac
+    border-radius: 100px
+    justify-content: center
+    align-items: center
+    width: 100%
+    padding: 10px 22px
+    font-size: 16px
+    font-weight: 400
+    line-height: 20px
+    transition: all .3s
+    display: flex
+    text-transform: uppercase
+    color: #fff
+    cursor: pointer
+    &:hover
+        background-color: $light-liliac
+        color: $black
+
+.cookies-banner
+    grid-row-gap: 0px
+    border: 2px solid $dark-liliac
+    background-color: $light-liliac
+    border-radius: 20px
+    flex-direction: column
+    width: 330px
+    height: auto
+    margin-bottom: 25px
+    margin-left: 56px
+    margin-right: 90px
+    padding: 25px
+    display: flex
+.text-x
+    display: flex
+    margin-bottom: 20px
+    gap: 12px
+.text-banner
+    color: $black
+    font-size: 16px
+    line-height: 20px
+    text-align: left
+.container-tp
+    padding: 20px
+    background-color: $light-liliac
+    border-radius: 15px
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 25px
+    .sub-wrapper
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 15px
+        max-width: 300px
+        .h-thankyou
+            color: $black
+            font-size: 36px
+            text-transform: uppercase
+            line-height: 36px
+        .paragraph-big
+            text-transform: none
+            color: $black
+        .btn-tp
+            padding: 15px 20px
+            background-color: $dark-liliac
+            color: #fff
+            border: 1px solid $dark-liliac
+            font-size: 20px
+            border-radius: 15px
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                background-color: $light-liliac
+                color: $black
+    .gif-subscr
+        height: 300px
+        width: 300px
+        object-fit: cover
+        border-radius: 15px
+.layout-grid-3 .layout-grid-box.first-box .h6
+    color: #fff
+@keyframes spin 
+  0%  
+    transform: rotate(0deg) 
+  100%  
+    transform: rotate(360deg) 
+
+@media screen and ( max-width: 1440px )
+    .container
+        max-width: 1366px
+    
+@media screen and ( max-width: 991px )
+    .container,.container-m.nav
+        max-width: 768px
+        padding-left: 32px
+        padding-right: 32px
+    .navbar
+        padding-left: 0
+        padding-right: 0
+    .navmenu 
+        display: none
+        flex-direction: column
+        position: fixed
+        padding-top: 20px
+        left: 0
+        width: 100%
+        height: 100vh /* Adjust according to the height of your navbar */
+        background-color: $black
+        z-index: 1001 /* Ensure the nav menu is above the overlay */
+    .navmenu.active 
+        display: block
+        overflow: visible
+        position: absolute
+        left: 0
+        right: 0
+        top: 68px
+    .burger-menu 
+        display: flex
+    .nav-overlay.active 
+        display: block
+    .navlink
+        position: relative
+        display: block
+        padding: 20px
+        font-size: 20px
+    .m-wrap 
+        display: none
+    .title
+        font-size: 64px
+        line-height: 64px
+    .subtitle
+        font-size: 20px
+        line-height: 40px    
+    .h1
+        font-size: 58px
+    .hero-text-wrapper .third-row .hero-link
+        order: -1
+        width: 100%
+    .hero-text-wrapper .third-row .third-row-wrapper .hero-star
+        width: 50px
+        height: 50px
+    .swiper-slide
+        width: 55%
+        &.first
+            width: 70%
+    .grid-3-col
+        grid-template-columns: 1.5fr 1fr 1fr
+        grid-template-rows: auto
+        margin-top: 48px
+        .second
+            grid-area: 1/2/2/4
+        .last
+            grid-area: 2/1/3/4
+    .layout-grid
+        grid-template-columns: 1fr 2fr
+        .grid-img
+            grid-area: 1/2/1/3
+        .mobile-none
+            display: none
+        .grid-3
+            grid-area: 3/1/4/3
+    .services-wrapper
+        grid-template-columns: 1fr 1fr
+    .footer-sec
+        .container
+            padding-left: 32px
+            padding-right: 32px
+    .footer-wrapper
+        gap: 15px
+        grid-template-columns: repeat(3,1fr)
+    .layout-grid .layout-grid-box .img-wrapper
+        display: none
+    .layout-grid-3
+        grid-template-columns: 1fr 1fr
+    .layout-grid-3 .layout-grid-box.first-box
+        grid-area: 1 / 1 / 1 / 4
+    .layout-grid-3 .layout-grid-box.img-box
+        grid-area: 2 / 1 / 3 / 4
+    .layout-grid-3 .layout-grid-box.third-box
+        grid-area: 3 / 1 / 4 / 4
+    .layout-grid-3 .layout-grid-box.second-box
+        grid-area: 4 / 1 / 5 / 4
+
+@media screen and ( max-width: 767px )
+    .container,.container-m.nav
+        max-width: 568px
+        padding-left: 24px
+        padding-right: 24px
+    .title
+        font-size: 48px
+        line-height: 48px
+    .paragraph-big
+        font-size: 20px
+    .hero-text-wrapper
+        gap: 10px
+    .hero-text-wrapper .third-row, .hero-text-wrapper .second-row
+        flex-wrap: wrap
+        gap: 10px
+    .grid-3-col .box-wrapper .img-wrapper
+        flex-wrap: wrap
+    .contacts_wrapper
+        grid-template-columns: 1fr
+    .contacts_map
+        iframe
+            height: 300px
+    .footer-wrapper
+        grid-template-columns: 1fr 1fr
+        gap: 20px
+    .container-tp
+        flex-direction: column
+    .layout-grid-2
+        grid-template-columns: 1fr
+@media screen and (max-width: 479px)
+    .container,.container-m.nav
+        max-width: 420px
+        padding-left: 12px
+        padding-right: 12px
+    .title
+        font-size: 36px
+        line-height: 36px
+    .subtitle
+        line-height: 28px
+    .grid-3-col
+        grid-template-columns: 1fr
+    .grid-3-col .second
+        grid-area: auto
+    .grid-3-col .last
+        grid-area: auto
+    .services-wrapper
+        grid-template-columns: 1fr
+    .swiper-slide
+        width: 100%
+        &.first
+            width: 100%
+    .footer-wrapper
+        grid-template-columns: 1fr
+        gap: 25px
+    .cookies-banner
+        margin-left: auto
+        margin-right: auto
+    .cookie-banner
+        left: 0
+    .layout-grid
+        grid-template-columns: 1fr
+    .layout-grid .grid-3
+        grid-area: auto
+    .h1
+        font-size: 40px
+    .cookies-banner
+        width: 100%
